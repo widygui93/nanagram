@@ -1,0 +1,80 @@
+.row-header { grid-area: row-header; }
+.blank { grid-area: blank; }
+.column-header { grid-area: column-header; }
+.nanagram-container { grid-area: nanagram-container; }
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	'blank row-header row-header row-header row-header row-header'
+	'column-header nanagram-container nanagram-container nanagram-container nanagram-container nanagram-container'
+	'column-header nanagram-container nanagram-container nanagram-container nanagram-container nanagram-container'
+	'column-header nanagram-container nanagram-container nanagram-container nanagram-container nanagram-container'
+	'column-header nanagram-container nanagram-container nanagram-container nanagram-container nanagram-container'
+	'column-header nanagram-container nanagram-container nanagram-container nanagram-container nanagram-container';
+}
+
+.row-header {
+	display: flex;
+}
+
+.row-header > div {
+	width: 100px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
+.column-header{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.column-header > div{
+	height: 75px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
+.blank{
+	display: flex;
+	flex-direction: column;
+}
+
+.blank > div {
+	height: 75px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
+
+body{
+	background-color: #BEEAC2;
+}
+
+.row-1, 
+.row-2,
+.row-3,
+.row-4,
+.row-5{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.col {
+	background-color: #f1f1f1;
+	width: 100px;
+	height: 75px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
+
